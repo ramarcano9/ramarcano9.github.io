@@ -1,23 +1,22 @@
 html {
 	font-size: 14px;
-	/* font-family: "Comforter Brush", cursive; */
-	font-family: "Open Sans",sans-serif;
 	background-color: #7F3FBF;
 }
-
+body {
+	width: 1080px;
+	font-family: "Open Sans", sans-serif;
+	margin: 0 auto;
+	background-color: #BFBF3F;
+	padding: 0 20px 20px 20px;
+	border: 5px solid  black;
+}
 h1 {
 	font-size: 60px;
+	font-family: "Comforter Brush";
 	text-align: center;
 	margin: 0;
 	padding: 20px 0;
 	color: #00539F;
-}
-body {
-	width: 600px;
-	margin: 0 auto;
-	background-color: #3FBF3F;
-	padding: 0 20px 20px 20px;
-	border: 5px solid  black;
 }
 canvas {
 	display: block;
@@ -27,4 +26,62 @@ p {
 	font-size: 16px;
 	line-height: 2;
 	letter-spacing: 1px;
+}
+/* --- Header setup ---- */
+nav, article, aside, footer {
+  background-color: white;
+  padding: 1%;
+}
+
+nav {
+  height: 50px;
+  background-color: #ff80ff;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+
+nav a {
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+nav form {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 2em;
+}
+
+input {
+  font-size: 1.6rem;
+  height: 32px;
+}
+
+input[type="search"] {
+  flex: 3;
+}
+
+input[type="submit"] {
+  flex: 1;
+  margin-left: 1rem;
+  background: #333;
+  border: 0;
+  color: white;
 }

@@ -28,29 +28,3 @@ function drawTr() {
   ctx.fillStyle = 'rgba(255, 128, 255, 0.5)';
   ctx.fillRect(0, 50, 100, 100);
 }
-
-let myHTML = document.querySelector('html');
-myHTML.onclick = function () {};
-
-let myButton = document.querySelector('button');
-let myHeading = document.querySelector('h1');
-
-function setUserName() {
-  let myName = prompt('Ingrese su nombre por favor.');
-  if(!myName) {
-    setUserName();
-  } else {
-    localStorage.setItem('name', myName);
-    myHeading.textContent = 'Project ' + myName + "'s PC";
-  }
-}
-
-  if(!localStorage.getItem('name')) {
-    setUserName();
-  } else {
-    let storedName = localStorage.getItem('name');
-    myHeading.textContent = 'Project ' + storedName + "'s PC";
-  }
-  myButton.onclick = function() {
-    setUserName();
-  }
