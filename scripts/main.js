@@ -1,56 +1,43 @@
-function drawCu() {
-  var canvas = document.getElementById("canvas");
-  if (canvas.getContext) {
-    var ctx = canvas.getContext("2d");
-
-    ctx.fillStyle = "rgb(200,0,0)";
-    ctx.fillRect (35, 35, 55, 50);
-
-    ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
-    ctx.fillRect (50, 50, 55, 50);
-  }
-}
-function drawTr() {
-  var ctx = document.getElementById('canvas').getContext('2d');
-
-  var sin = Math.sin(Math.PI / 6);
-  var cos = Math.cos(Math.PI / 6);
-  ctx.translate(100, 100);
-  var c = 0;
-  for (var i = 0; i <= 12; i++) {
-    c = Math.floor(255 / 12 * i);
-    ctx.fillStyle = 'rgb(' + c + ', ' + c + ', ' + c + ')';
-    ctx.fillRect(0, 0, 100, 10);
-    ctx.transform(cos, sin, -sin, cos, 0, 0);
-  }
-
-  ctx.setTransform(-1, 0, 0, 1, 100, 100);
-  ctx.fillStyle = 'rgba(255, 128, 255, 0.5)';
-  ctx.fillRect(0, 50, 100, 100);
-}
-
 let myHTML = document.querySelector('html');
 myHTML.onclick = function () {};
 
 let myButton = document.querySelector('button');
 let myHeading = document.querySelector('h1');
 
+function cambiaPic(itemaver) {
+  var itempic = document.getElementById("itemimg");
+  if (itempic.getContext) {
+    var ctx = itempic.getAttribute('src');
+  }
+  itempic.setAttribute('src','images/' + itemaver + '.png');
+}
+
 function setUserName() {
   let myName = prompt('Ingrese su nombre por favor.');
+  let myTitle = document.getElementById('title');
   if(!myName) {
     setUserName();
   } else {
     localStorage.setItem('name', myName);
-    myHeading.textContent = 'Project ' + myName + "'s PC";
-  }
+    if(myTitle.textContent == 'Administra Projecto actualiza PC') {
+        myHeading.textContent =  myName + "'s PC Project";
+    } else if (myTitle == 'Mini Air con Hydro X') {
+        myHeading.textContent =  myName + "'s Mini AirX Project";
+    }
+    }
 }
 
-  if(!localStorage.getItem('name')) {
-    setUserName();
-  } else {
-    let storedName = localStorage.getItem('name');
-    myHeading.textContent = 'Project ' + storedName + "'s PC";
+if(!localStorage.getItem('name')) {
+  setUserName();
+} else {
+  let storedName = localStorage.getItem('name');
+  let myTitle = document.getElementById('title');
+  if(myTitle == 'Administra Projecto actualiza PC') {
+      myHeading.textContent =  myName + "'s PC Project";
+  } else if (myTitle == 'Mini Air con Hydro X') {
+      myHeading.textContent =  myName + "'s Mini AirX Project";
   }
-  myButton.onclick = function() {
-    setUserName();
-  }
+}
+myButton.onclick = function() {
+  setUserName();
+}

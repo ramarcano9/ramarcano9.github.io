@@ -4,11 +4,8 @@
  <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
  <link rel="icon" href="https://developer.mozilla.org/static/img/favicon32.png"
 
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Open+Sans:ital,wght@1,300&family=Oxygen:wght@300&display=swap">
 -->
-<html lang="es-LA">
+<html lang="es-LA"> 
  <head>
    <meta charset="utf-8">
    <title>Administra Projecto actualiza PC</title>
@@ -18,6 +15,9 @@
    <meta property="og:description" content="Aca el uso de metadatos">
    <meta property="og:title" content="Metadata, The HTML &lt;head$&gt;, on MSD">
 
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Pushster&display=swap">
    <link rel="icon" href="images/logo-circle.png" type="image/x-icon">
    <link rel="stylesheet" href="styles/style.css">
    <script src="scripts/main.js" defer></script>
@@ -28,16 +28,95 @@
    </header>
    <nav>
      <ul>
-       <li>Ver <a href="pc-fans.html">PC fans</a></li>
-       <li>Lian Li O11D <a href="receta-hummus.html">Mini &plus; EK Reflection</a> Distro</li>
-       <li>Lian Li O11D <a href="ll-o11-mini-air.html">Mini Air con Hydro X</a></li>
-       <li>Ejemplo formato <a href="carta profe.html">Carta</a></li>
+       <li><a href="index.html">Home</a> </li>
+       <li><a href="ll-o11-mini-air.html">Mini Air &amp; Hydro X</a></li>
+       <li><a href="ll-o11-mini-ek.html">Mini &amp; EK</a></li>
+       <li><a href="o11-dynamic.html">Dynamic &amp; EK</a></li>
+       <li><a href="#">Dynamic EVO</a></li>
      </ul>
    </nav>
    <main>
-     <p>Seleccione segun su preferencia</p>
+     <article>
+       <h2>Descripcion</h2>
+       <p>Esta sencilla paguina nos permite revisar las diferentes opciones de armado
+       para un computador (PC) con <strong>refrigeracion liquida</strong>.<br>
+       En esta seccion listamos los componentes comunes a todas las alternativas de armado,
+       distingiendo los inventariados, de los pendientes por compra.</p>
+       <div class="box">
+         <div>
+            <img src="images/z690-carbon-ek.png" alt="" id="itemimg">
+         </div>
+         <div>
+           <h3>Por comprar:</h3>
+           <ul>
+             <li onmousemove="cambiaPic('z690-carbon-ek')">MotherBoard:
+               <a href="https://www.msi.com/Motherboard/MPG-Z690-CARBON-EK-X" target="_blank">
+               MSI Z690 Carbon EK X</a></li>
+               <ul>
+                 <h4>Alternativas:</h4>
+                 <li><a href="#" target="_blank">Aorus Z690 Extreme WaterForce</a> </li>
+                 <li><a href="https://www.amazon.com/GIGABYTE-Z690-AORUS-Thunderbolt-Motherboard/dp/B09J64TBJG/ref=sr_1_2?keywords=z690+waterforce&qid=1638807278&sr=8-2"
+                   target="_blank">Aorus Z690 Master</a> con <a href="#">Monoblock</a> </li>
+                 <li onmousemove="cambiaPic('z690-max-glacial')">
+                   <a href="https://rog.asus.com/motherboards/rog-maximus/rog-maximus-z690-extreme-glacial-model/"
+                   target="_blank">ROG Maximus Z690 Glacial</a> </li>
+                 <li onmousemove="cambiaPic('z690-max-hero')">
+                   <a href="https://rog.asus.com/motherboards/rog-maximus/rog-maximus-z690-hero-model/"
+                   target="_blank">ROG Maximus Z690 Hero</a> con <a href="#">EKWB Monoblock</a> </li>  <br>
+               </ul>
+             <li onmousemove="cambiaPic('3090-suprimx')">Videoboard:
+               <a href="https://www.msi.com/Graphics-Card/GeForce-RTX-3090-SUPRIM-X-24G"
+               target="_blank">MSI RTX 3090 Suprim X</a> </li>
+               <ol>
+                 <h4>Alternativas:</h4>
+                  <li onmousemove="cambiaPic('3090-strix')">
+                    <a href="https://rog.asus.com/latin/graphics-cards/graphics-cards/rog-strix/rog-strix-rtx3090-o24g-gaming-model/"
+                    target="_blank"></a>ROG Strix RTX 3090 </li>
+                  <li onmousemove="cambiaPic('3090-tuf')">
+                    <a href="https://www.asus.com/latin/Motherboards-Components/Graphics-Cards/TUF-Gaming/TUF-RTX3090-O24G-GAMING/"
+                    target="_blank"></a>Asus RTX 3090 TUF Gaming</li>
+               </ol>
+             <li>Memoria DRAM: <a href="https://www.corsair.com/us/es/Categor%C3%ADas/Productos/Memoria/DOMINATOR-PLATINUM-RGB-DDR5-Memory---White/p/CMT32GX5M2B5200C38W"
+               target="_blank">Corsair DDR5 Dominator Platinum RGB</a>
+             </li>
+             <li>Almacenamiento M.2: <a href="https://www.westerndigital.com/es-la/products/internal-drives/wd-black-sn850-nvme-ssd#WDS500G1X0E"
+               target="_blank">WD Black SN850</a></li>
+             <li>Backup HDD: <a href="https://www.seagate.com/la/es/products/hard-drives/barracuda-hard-drive/"
+               target="_blank">Seagate Barracuda 2,5&quot; 4Tb</a> </li>
+           </ul>
+         </div>
+       </div>
+       <h3>Inventario:</h3>
+       <ul>
+         <li>Almacenamiento M.2: Sabrent 2Gb</li>
+         <li>Pump: Corsair XD5</li>
+         <li>Fittings: Corsair Sries XF</li>
+         <li>Mouse: Corsair Dark</li>
+         <li>Teclado: Corsair </li>
+       </ul>
+       <p><a href="aves/index.html">Sitio de aves</a></p>
+     </article>
      <aside>
        <h2>Fabricantes</h2>
+       <ul>
+         <li><a href="https://lian-li.com/" target="_blank">Lian Li</a> </li>
+         <li><a href="https://www.ekwb.com/shop/" target="_blank">EKWB</a> </li>
+         <li><a href="https://www.bitspower.com/" target="_blank">Bitspower</a> </li>
+         <li><a href="https://www.primochill.com/" target="_blank">PrimoChill</a> </li>
+         <li><a href="https://www.corsair.com/us/es/" target="_blank">Corsair</a> </li>
+         <li><a href="https://www.coolermaster.com/" target="_blank">Cooler Master</a> </li>
+         <li><a href="https://www.msi.com/index.php" target="_blank">MSI</a> </li>
+         <li><a href="https://rog.asus.com/motherboards/rog-maximus-series?FilterLevelTagId=77&tagID=2715&items="
+           target="_blank">Asus ROG</a> </li>
+         <li><a href="https://www.gigabyte.com/Motherboard/AORUS-Gaming"
+           target="_blank">Gigabyte Aorus</a> </li>
+       </ul>
+       <h2>Otros Ejercicios</h2>
+       <ul>
+         <li><a href="carta profe.html">Carta</a> </li>
+         <li><a href="pc-fans.html">Canvas GIF</a> </li>
+         <li><a href="receta-hummus.html">Receta Hummus</a> </li>
+       </ul>
      </aside>
    </main>
  </body>
